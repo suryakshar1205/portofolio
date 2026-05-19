@@ -11,7 +11,7 @@ export function Contact({ onResumeClick }) {
           <div className="glass-panel p-7">
             <h3 className="font-display text-2xl font-semibold text-white">Open to AI engineering opportunities</h3>
             <p className="mt-4 leading-8 text-slate-400">
-              Open to internships, research collaborations, and product engineering work across AI/ML, computer vision, NLP, wireless communication, and full-stack systems.
+              Open to internships and research collaborations across AI/ML, computer vision, NLP, wireless communication, and AI + ECE systems.
             </p>
             <div className="mt-7 space-y-3">
               {contactLinks.map((link) => {

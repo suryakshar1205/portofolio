@@ -23,7 +23,7 @@
 export const profile = {
   name: "Suryakshar Konchada",
   initials: "SK",
-  role: "AI/ML Engineer - ECE Student - Full Stack Developer",
+  role: "AI/ML Engineer - ECE Student - Communication Systems Enthusiast",
   location: "Hyderabad, India",
   email: "konchadasuryakshar@gmail.com",
   phone: "+91 93923 03750",
@@ -37,7 +37,7 @@ export const profile = {
       name: "Suryakshar_Konchada_AI_ML_Resume.pdf",
       url: "/Suryakshar_Konchada_Resume.pdf",
       extension: "pdf",
-      bestFor: "AI/ML, NLP, computer vision, data science, and full-stack AI roles.",
+      bestFor: "AI/ML, NLP, computer vision, data science, and applied AI roles.",
       accent: "from-cyan-beam to-plasma"
     },
     {
@@ -51,15 +51,15 @@ export const profile = {
     }
   ],
   headline:
-    "Building intelligent systems across AI/ML, computer vision, NLP, wireless communication, signal processing, and modern web engineering.",
+    "Building intelligent systems across AI/ML, computer vision, NLP, wireless communication, and signal processing.",
   typingPhrases: [
     "Training text and vision models from real datasets",
     "Connecting AI with Electronics and Communication Engineering",
-    "Building full-stack tools around intelligent workflows",
+    "Building practical tools around intelligent workflows",
     "Turning experiments into practical engineering systems"
   ],
   summary:
-    "I am an AI/ML-focused Electronics and Communication Engineering student at JNTUH. I build across NLP, computer vision, full-stack tools, and AI + ECE systems, with a focus on practical engineering outcomes.",
+    "I am an AI/ML-focused Electronics and Communication Engineering student at JNTUH. I build across NLP, computer vision, communication systems, and AI + ECE applications, with a focus on practical engineering outcomes.",
   stats: [
     { value: "Multiple", label: "Engineering Projects" },
     { value: "8.13", label: "Academic CGPA" },
@@ -117,11 +117,11 @@ export const skills = [
     items: ["Text Classification", "Sentiment Analysis", "TF-IDF", "Tokenization", "Word Embeddings", "NLTK"]
   },
   {
-    title: "Web Development",
+    title: "Application Prototyping",
     icon: Code2,
     story:
-      "I like building interfaces around intelligence, especially tools that make AI outputs understandable and accessible.",
-    items: ["React", "Tailwind CSS", "Flask", "HTML", "CSS", "JavaScript", "SQLAlchemy"]
+      "I build simple interfaces and prototypes to make AI outputs easier to test, explain, and use.",
+    items: ["Flask", "HTML", "CSS", "JavaScript", "SQLAlchemy"]
   },
   {
     title: "ECE + Wireless Systems",
@@ -187,12 +187,12 @@ export const engineeringDomains = [
     tools: ["Telecom", "Wireless", "MATLAB", "Signal Analysis"]
   },
   {
-    title: "Full Stack AI Products",
+    title: "AI Application Prototypes",
     icon: Rocket,
     description:
-      "Interfaces and backend systems that make AI workflows understandable and useful for real users.",
+      "Lightweight AI tools and interfaces that make workflows easier to use and demonstrate.",
     projects: ["Digital Notice Board", "Spoorthi AI"],
-    tools: ["React", "Tailwind", "Flask", "SQLAlchemy"]
+    tools: ["Flask", "JavaScript", "HTML/CSS", "SQLAlchemy"]
   },
   {
     title: "Predictive ML Pipelines",
@@ -224,10 +224,10 @@ export const whatIBuild = [
     signal: "sensor -> threshold -> logic -> actuator"
   },
   {
-    title: "Full-Stack AI Tools",
+    title: "AI Workflow Tools",
     description:
-      "Web products and dashboards that package intelligent workflows into usable interfaces.",
-    signal: "frontend -> backend -> model/service -> user"
+      "Simple tools and dashboards that package intelligent workflows into usable demos.",
+    signal: "interface -> service -> model/output -> user"
   },
   {
     title: "Telecom + AI Workflows",
@@ -256,15 +256,15 @@ export const featuredProjects = [
     title: "Digital Notice Board",
     github: "https://github.com/suryakshar1205/Digital-Notice-Board",
     icon: Rocket,
-    type: "Full-Stack Academic System",
+    type: "Academic Utility System",
     description:
-      "A full-stack academic notice platform with admin workflows, schedules, document previews, and student-facing utilities.",
+      "An academic notice platform with admin workflows, schedules, document previews, and student-facing utilities.",
     stack: ["Flask", "SQLAlchemy", "JavaScript", "HTML/CSS"],
     visual: "notice",
     problem: "Academic updates often get scattered across different channels, making it harder for students to find timely notices and schedules.",
     pipeline: ["Admin creates notice", "Backend stores content", "Students view updates", "Documents and timetable data stay organized"],
     outcome: "A structured academic communication tool with a cleaner student-facing workflow.",
-    decisions: ["Kept the interface direct and admin-friendly", "Used a full-stack structure so the system can grow beyond static notices"]
+    decisions: ["Kept the interface direct and admin-friendly", "Structured the project so it can grow beyond static notices"]
   },
   {
     title: "Plant Disease Detection",

@@ -108,7 +108,7 @@ export function FeaturedProjects() {
 
 export function AllProjects() {
   return (
-    <Section id="projects" eyebrow="Project Library" title="Public builds across ML, web, analytics, and embedded systems.">
+    <Section id="projects" eyebrow="Project Library" title="Public builds across ML, analytics, prototypes, and embedded systems.">
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project, index) => (
           <Reveal key={project.title} delay={index * 0.05}>
