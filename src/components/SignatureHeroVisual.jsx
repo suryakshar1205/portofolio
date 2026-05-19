@@ -37,12 +37,11 @@ export function SignatureHeroVisual() {
           <RadarSweep />
           <NeuralGraph />
           <Spectrum />
-          <div className="absolute left-5 top-5 rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 backdrop-blur">
-            <div className="mb-2 flex items-center gap-2 text-cyan-beam">
-              <Radar size={16} className="animate-spin-slow" />
-              <span className="font-display text-xs uppercase tracking-[0.22em]">AI signal engine</span>
+          <div className="absolute left-4 top-4 rounded-full border border-white/10 bg-slate-950/60 px-3 py-2 backdrop-blur">
+            <div className="flex items-center gap-2 text-cyan-beam">
+              <Radar size={13} className="animate-spin-slow" />
+              <span className="font-display text-[10px] uppercase tracking-[0.22em]">AI signal</span>
             </div>
-            <p className="text-sm text-slate-400">Neural systems meet ECE telemetry.</p>
           </div>
           <div className="absolute bottom-5 right-5 rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 backdrop-blur">
             <p className="font-display text-xs uppercase tracking-[0.22em] text-slate-500">current focus</p>
