@@ -16,18 +16,18 @@ const pillars = [
   {
     title: "Product Engineering",
     icon: Layers3,
-    text: "Full-stack apps with clean architecture, fast interfaces, and recruiter-friendly polish."
+    text: "Full-stack apps with clean architecture, fast interfaces, and practical polish."
   },
   {
     title: "Research Mindset",
     icon: Cpu,
-    text: "Curious, experiment-driven work across algorithms, signals, models, and interfaces."
+    text: "Experiment-driven work across algorithms, signals, models, and interfaces."
   }
 ];
 
 export function About() {
   return (
-    <Section id="about" eyebrow="About" title="The story is AI, but the foundation is engineering.">
+    <Section id="about" eyebrow="About" title="A builder at the intersection of AI, ECE, and product engineering.">
       <div className="grid gap-8 lg:grid-cols-[1fr_.85fr]">
         <Reveal>
           <div className="glass-panel p-7 sm:p-9">

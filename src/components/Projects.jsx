@@ -9,7 +9,7 @@ export function FeaturedProjects() {
 
   return (
     <>
-      <Section id="featured-projects" eyebrow="Featured Projects" title="Cinematic project systems built across AI, NLP, full-stack, and applied product thinking.">
+      <Section id="featured-projects" eyebrow="Featured Projects" title="Selected systems with real architecture behind them.">
         <div className="grid gap-6 lg:grid-cols-2">
           {featuredProjects.map((project, index) => {
             const Icon = project.icon;
@@ -108,7 +108,7 @@ export function FeaturedProjects() {
 
 export function AllProjects() {
   return (
-    <Section id="projects" eyebrow="Project Library" title="A complete public project map from GitHub, from ML notebooks to embedded ECE builds.">
+    <Section id="projects" eyebrow="Project Library" title="Public builds across ML, web, analytics, and embedded systems.">
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project, index) => (
           <Reveal key={project.title} delay={index * 0.05}>

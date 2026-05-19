@@ -51,15 +51,15 @@ export const profile = {
     }
   ],
   headline:
-    "Building intelligent systems across Artificial Intelligence, Computer Vision, NLP, Wireless Communication, Signal Processing, and Modern Web Technologies.",
+    "Building intelligent systems across AI/ML, computer vision, NLP, wireless communication, signal processing, and modern web engineering.",
   typingPhrases: [
     "Training text and vision models from real datasets",
     "Connecting AI with Electronics and Communication Engineering",
     "Building full-stack tools around intelligent workflows",
-    "Turning experiments into practical engineering projects"
+    "Turning experiments into practical engineering systems"
   ],
   summary:
-    "I am an AI/ML-focused Electronics and Communication Engineering student at JNTUH. My work began with Python models and data preprocessing, then expanded into NLP, computer vision, transformer-based image classification, full-stack tools, and embedded/ECE systems. I like projects where intelligence has to meet the physical world: signals, sensors, telecom networks, dashboards, and real users.",
+    "I am an AI/ML-focused Electronics and Communication Engineering student at JNTUH. I build across NLP, computer vision, full-stack tools, and AI + ECE systems, with a focus on practical engineering outcomes.",
   stats: [
     { value: "Multiple", label: "Engineering Projects" },
     { value: "8.13", label: "Academic CGPA" },
@@ -80,17 +80,17 @@ export const storyChapters = [
   {
     title: "The foundation",
     text:
-      "ECE gave me the hardware-and-signals lens: communication systems, MATLAB/Simulink, telecom ideas, and the discipline of thinking in systems rather than isolated code."
+      "ECE gave me a systems lens: signals, telecom, hardware, MATLAB/Simulink, and communication networks."
   },
   {
     title: "The AI layer",
     text:
-      "AI/ML became the layer I use to make systems adaptive: text classification, sentiment analysis, CNNs, Vision Transformers, feature engineering, and model optimization."
+      "AI/ML became the layer I use for classification, prediction, vision, NLP, and adaptive decision-making."
   },
   {
     title: "The product bridge",
     text:
-      "Full-stack development helps me package the work into tools people can actually use, from academic dashboards to intelligent assistants and polished portfolio experiences."
+      "Full-stack development helps me turn experiments into usable tools, dashboards, and intelligent interfaces."
   }
 ];
 
@@ -158,7 +158,7 @@ export const engineeringDomains = [
     title: "NLP Systems",
     icon: MessageSquareText,
     description:
-      "Text pipelines that turn raw language into features, classifications, sentiment signals, and reusable ML outputs.",
+      "Text pipelines that convert raw language into sentiment, classification, and reusable ML outputs.",
     projects: ["Twitter Sentiment Analysis", "Coincent AI NLP Work"],
     tools: ["Python", "TF-IDF", "NLTK", "Scikit-learn"]
   },
@@ -166,7 +166,7 @@ export const engineeringDomains = [
     title: "Computer Vision Systems",
     icon: Cpu,
     description:
-      "Image-based intelligence for classification and diagnosis-style workflows using preprocessing, CNNs, and transformer thinking.",
+      "Image intelligence for classification and diagnosis-style workflows using preprocessing, CNNs, and transformer thinking.",
     projects: ["Plant Disease Detection", "CIFAR-10 ViT"],
     tools: ["CNNs", "OpenCV", "TensorFlow", "Data Augmentation"]
   },
@@ -182,7 +182,7 @@ export const engineeringDomains = [
     title: "Wireless Communication + AI",
     icon: RadioTower,
     description:
-      "A growing focus on using AI thinking around telecom workflows, communication networks, signals, and reliability.",
+      "AI thinking applied to telecom workflows, communication networks, signals, and reliability.",
     projects: ["BSNL Internship", "ECE Systems Practice"],
     tools: ["Telecom", "Wireless", "MATLAB", "Signal Analysis"]
   },
@@ -190,7 +190,7 @@ export const engineeringDomains = [
     title: "Full Stack AI Products",
     icon: Rocket,
     description:
-      "Interfaces and backend systems that make AI work understandable, accessible, and useful for real users.",
+      "Interfaces and backend systems that make AI workflows understandable and useful for real users.",
     projects: ["Digital Notice Board", "Spoorthi AI"],
     tools: ["React", "Tailwind", "Flask", "SQLAlchemy"]
   },
@@ -198,7 +198,7 @@ export const engineeringDomains = [
     title: "Predictive ML Pipelines",
     icon: BrainCircuit,
     description:
-      "Structured ML workflows for classification, regression, analytics, feature engineering, and model evaluation.",
+      "Structured ML workflows for classification, regression, analytics, feature engineering, and evaluation.",
     projects: ["Car Price Predictor", "IPL Winning Prediction", "Breast Cancer Detection"],
     tools: ["Pandas", "NumPy", "Scikit-learn", "Model Metrics"]
   }
@@ -258,7 +258,7 @@ export const featuredProjects = [
     icon: Rocket,
     type: "Full-Stack Academic System",
     description:
-      "A full-stack academic notice platform with admin workflows, timetable handling, document previews, and student-facing utility features.",
+      "A full-stack academic notice platform with admin workflows, schedules, document previews, and student-facing utilities.",
     stack: ["Flask", "SQLAlchemy", "JavaScript", "HTML/CSS"],
     visual: "notice",
     problem: "Academic updates often get scattered across different channels, making it harder for students to find timely notices and schedules.",
@@ -272,7 +272,7 @@ export const featuredProjects = [
     icon: Leaf,
     type: "Computer Vision",
     description:
-      "A deep-learning computer vision workflow for detecting plant disease patterns from leaf imagery using preprocessing and CNN-based classification.",
+      "A computer vision workflow for detecting plant disease patterns from leaf imagery using preprocessing and CNN classification.",
     stack: ["Python", "CNN", "Computer Vision", "Image Processing"],
     visual: "vision",
     problem: "Plant disease detection needs fast visual analysis so crop issues can be identified earlier.",
@@ -286,7 +286,7 @@ export const featuredProjects = [
     icon: MessageSquareText,
     type: "NLP System",
     description:
-      "An NLP pipeline for classifying tweet sentiment with tokenization, stop-word removal, TF-IDF vectorization, and ML classification.",
+      "An NLP pipeline for tweet sentiment classification using preprocessing, TF-IDF vectorization, and ML models.",
     stack: ["NLP", "TF-IDF", "Scikit-learn", "Python"],
     visual: "nlp",
     problem: "Social text is noisy, short, and inconsistent, so the system needs careful preprocessing before classification.",
@@ -301,7 +301,7 @@ export const featuredProjects = [
     icon: Sparkles,
     type: "AI Prototype",
     description:
-      "An AI-focused prototype exploring intelligent interactions and event/product support workflows through a fast Python-based implementation.",
+      "A hosted AI prototype for intelligent interactions and event/support workflows.",
     stack: ["Python", "AI", "Automation", "Prototype"],
     visual: "ai",
     problem: "Event and user-support workflows benefit from quick, intelligent interactions instead of static information pages.",
@@ -315,7 +315,7 @@ export const featuredProjects = [
     icon: Car,
     type: "Embedded AI + ECE",
     description:
-      "A smart night-driving assist system using ESP32, LDR sensors, and relay control to switch between high and low beams based on ambient light conditions.",
+      "An ESP32-based night-driving assist system for automatic high/low beam switching.",
     stack: ["ESP32", "C++", "LDR Sensors", "Relay Control", "Embedded Systems"],
     visual: "embedded",
     problem: "Manual high-beam switching can reduce safety during night driving when lighting conditions change quickly.",
@@ -330,70 +330,70 @@ export const projects = [
     title: "Digital Notice Board",
     github: "https://github.com/suryakshar1205/Digital-Notice-Board",
     description:
-      "Full-stack academic notice platform with admin workflows, timetable handling, document preview, and student-facing utility features.",
+      "Academic notice platform with admin tools, timetable handling, and student-facing updates.",
     stack: ["HTML", "Flask", "SQLAlchemy", "JavaScript"]
   },
   {
     title: "Plant Disease Detection",
     github: "https://github.com/suryakshar1205/Plant-Disease-detection",
     description:
-      "Computer vision project for identifying plant disease patterns from leaf images using preprocessing and CNN-based classification workflows.",
+      "Leaf-image disease detection using preprocessing and CNN-based computer vision.",
     stack: ["CNN", "Computer Vision", "Python", "Image Processing"]
   },
   {
     title: "Twitter Sentiment Analysis",
     github: "https://github.com/suryakshar1205/Twitter-Sentiment-Analysis",
     description:
-      "NLP pipeline for classifying tweet sentiment with tokenization, stop-word removal, vectorization, and classical ML techniques.",
+      "Tweet sentiment classification with tokenization, vectorization, and ML techniques.",
     stack: ["NLP", "TF-IDF", "Machine Learning", "Python"]
   },
   {
     title: "Spoorthi AI",
     github: "https://github.com/suryakshar1205/spoorthi_ai",
     description:
-      "AI-focused prototype exploring intelligent interactions and event/product support workflows through a fast Python-based implementation.",
+      "Live AI prototype for intelligent event and support interactions.",
     stack: ["Python", "AI", "Prototype"]
   },
   {
     title: "High Beam Assist",
     github: "https://github.com/suryakshar1205/High-Beam-Assist",
     description:
-      "Smart high-beam assist system using ESP32, LDR sensors, and relay switching to improve night-driving safety.",
+      "ESP32 high-beam assist using LDR sensors and relay control.",
     stack: ["C++", "ESP32", "Sensors", "ECE"]
   },
   {
     title: "IPL Winning Prediction",
     github: "https://github.com/suryakshar1205/IPL-WINNING-PREDICTION",
     description:
-      "Live match probability engine using second-innings features like runs left, balls left, wickets, CRR, and RRR.",
+      "IPL win-probability predictor using second-innings match-state features.",
     stack: ["Sports Analytics", "Logistic Regression", "Pandas"]
   },
   {
     title: "Car Price Predictor",
     github: "https://github.com/suryakshar1205/CAR-PRICE-PREDICTOR",
     description:
-      "Regression model estimating used-car prices from engineered vehicle age, fuel, transmission, and usage features.",
+      "Used-car price prediction using regression and engineered vehicle features.",
     stack: ["Regression", "Feature Engineering", "Scikit-learn"]
   },
   {
     title: "Breast Cancer Detection",
     github: "https://github.com/suryakshar1205/BREAST-CANCER-DETECTION",
     description:
-      "Medical AI classification workflow for distinguishing malignant and benign tumours from structured dataset features.",
+      "Medical AI classifier for benign and malignant tumour prediction.",
     stack: ["Classification", "Healthcare ML", "Python"]
   },
   {
     title: "Iris Multiclassification",
     github: "https://github.com/suryakshar1205/IRIS-MULTICLASSIFICATION",
     description:
-      "Classical ML comparison for multi-class flower classification using supervised learning workflows.",
+      "Classical supervised ML project for Iris species classification.",
     stack: ["KNN", "SVM", "Scikit-learn"]
   },
   {
     title: "Flappy Bird Clone",
     github: "https://github.com/suryakshar1205/flappy-bird",
     description:
-      "Python game clone exploring interactive loops, collision logic, scoring, and responsive gameplay mechanics.",
+      "Python game clone with gameplay loops, collision logic, and scoring.",
     stack: ["Python", "Game Logic", "Pygame"],
     icon: Gamepad2
   }
@@ -406,8 +406,8 @@ export const experience = [
     date: "Recent Internship",
     icon: Satellite,
     points: [
-      "Worked around telecom infrastructure and communication-system workflows while studying how AI can support network monitoring, automation, and decision-making.",
-      "Connected ECE foundations with applied intelligence: signals, routing, reliability, and opportunities for AI-assisted communication systems."
+      "Explored telecom infrastructure and AI opportunities in communication-system workflows.",
+      "Connected ECE foundations with signals, routing, reliability, and intelligent automation ideas."
     ],
     stack: ["Telecom", "AI + ECE", "Communication Networks", "Systems Engineering"]
   },
@@ -417,9 +417,9 @@ export const experience = [
     date: "April 2024 - May 2024",
     icon: BrainCircuit,
     points: [
-      "Developed machine learning models for text classification and image classification using Python and deep learning frameworks.",
-      "Built an NLP text-classification system processing 50,000+ samples and improved accuracy from 75% to 90% through feature engineering and hyperparameter tuning.",
-      "Implemented a Vision Transformer for CIFAR-10 image classification, moving from a CNN baseline toward stronger 85-90% performance."
+      "Built text and image classification models using Python and deep learning frameworks.",
+      "Improved NLP classification accuracy from 75% to 90% through feature engineering.",
+      "Implemented a Vision Transformer for CIFAR-10 image classification."
     ],
     stack: ["Python", "Machine Learning", "NLP", "Vision Transformers", "Computer Vision"]
   },
@@ -429,8 +429,8 @@ export const experience = [
     date: "2024 - 2026",
     icon: Award,
     points: [
-      "Participated in Smart India Hackathon 2024 and 2025 with applied problem-solving and rapid prototyping.",
-      "Selected to Round 2 in MSME Idea Hackathon 4.0 and won 2nd Prize at E-Papyrus, Spoorthi National Symposium."
+      "Participated in Smart India Hackathon 2024 and 2025 with rapid prototyping work.",
+      "Selected to Round 2 in MSME Idea Hackathon 4.0; won 2nd Prize at E-Papyrus."
     ],
     stack: ["Rapid Prototyping", "Presentation", "Problem Solving"]
   }
