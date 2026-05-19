@@ -9,7 +9,7 @@ export function Hero({ onResumeClick }) {
   const typed = useTyping(profile.typingPhrases);
 
   return (
-    <section id="home" className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 pb-20 pt-32 sm:px-6 lg:px-8">
+    <section id="home" className="relative mx-auto flex min-h-screen max-w-7xl overflow-x-clip px-4 pb-20 pt-32 sm:px-6 lg:px-8">
       <div className="grid w-full items-center gap-14 lg:grid-cols-[1.05fr_.95fr]">
         <div>
           <motion.div
@@ -96,7 +96,7 @@ export function Hero({ onResumeClick }) {
           transition={{ delay: 0.25, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="relative mx-auto w-full max-w-[560px]"
         >
-          <div className="absolute -inset-8 rounded-full bg-cyan-beam/10 blur-3xl" />
+          <div className="absolute -inset-4 rounded-full bg-cyan-beam/10 blur-3xl sm:-inset-8" />
           <SignatureHeroVisual />
         </motion.div>
       </div>
