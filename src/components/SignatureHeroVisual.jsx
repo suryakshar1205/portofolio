@@ -7,7 +7,7 @@ const nodes = [
   { x: 52, y: 18, label: "CV" },
   { x: 79, y: 32, label: "ECE" },
   { x: 31, y: 63, label: "DSP" },
-  { x: 66, y: 70, label: "WEB" }
+  { x: 66, y: 70, label: "AI" }
 ];
 
 const links = [
