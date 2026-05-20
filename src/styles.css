@@ -405,12 +405,6 @@ canvas {
   color: #2563eb !important;
 }
 
-:root[data-theme="light"] .hero-badge::before {
-  content: "[ SYSTEMS ]";
-  margin-right: 0.35rem;
-  color: #64748b;
-}
-
 :root[data-theme="light"] .section-shell::after {
   content: "";
   position: absolute;
@@ -483,6 +477,13 @@ canvas {
 }
 
 @media (max-width: 640px) {
+  .hero-badge {
+    max-width: 100%;
+    padding: 0.45rem 0.7rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+  }
+
   .section-title {
     @apply text-3xl;
   }

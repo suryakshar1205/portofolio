@@ -19,7 +19,7 @@ export function Hero({ onResumeClick }) {
             className="hero-badge"
           >
             <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-beam" />
-            AI + Research + Engineering Portfolio
+            AI/ML + ECE Portfolio
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 32 }}
