@@ -35,7 +35,7 @@ export const profile = {
       id: "ai",
       label: "AI/ML Resume",
       name: "Suryakshar_Konchada_AI_ML_Resume.pdf",
-      url: "/Suryakshar_Konchada_Resume.pdf",
+      url: "/Suryakshar_Konchada_AI_ML_Resume.pdf",
       extension: "pdf",
       bestFor: "AI/ML, NLP, computer vision, data science, and applied AI roles.",
       accent: "from-cyan-beam to-plasma"
@@ -44,7 +44,7 @@ export const profile = {
       id: "core",
       label: "ECE/Core Resume",
       name: "Suryakshar_Konchada_ECE_Core_Resume.pdf",
-      url: "/Suryakshar_Konchada_Core_Resume.pdf",
+      url: "/Suryakshar_Konchada_ECE_Core_Resume.pdf",
       extension: "pdf",
       bestFor: "Electronics, telecom, embedded systems, wireless communication, and signal processing roles.",
       accent: "from-plasma to-violet-pulse"

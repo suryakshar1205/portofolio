@@ -58,14 +58,16 @@ tailwind.config.js
 
 ## Resumes
 
-The portfolio uses embedded resume assets:
+The portfolio uses embedded resume assets from `public/`.
+
+Use these exact filenames for deployment:
 
 ```text
-public/Suryakshar_Konchada_Resume.pdf
-public/Suryakshar_Konchada_Core_Resume.pdf
+public/Suryakshar_Konchada_AI_ML_Resume.pdf
+public/Suryakshar_Konchada_ECE_Core_Resume.pdf
 ```
 
-To replace them later, add the new files to `public/` and update:
+To replace them later, overwrite those files in `public/`. If you use different filenames, update:
 
 ```js
 profile.resumes
