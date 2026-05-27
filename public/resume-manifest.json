@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-05-27T17:32:49.830Z",
+  "resumes": [
+    {
+      "id": "ai",
+      "label": "AI/ML Resume",
+      "name": "SURYAKSHAR_KONCHADA_RESUME_A.pdf",
+      "url": "/SURYAKSHAR_KONCHADA_RESUME_A.pdf",
+      "extension": "pdf",
+      "bestFor": "AI/ML, NLP, computer vision, data science, and applied AI roles.",
+      "accent": "from-cyan-beam to-plasma"
+    },
+    {
+      "id": "core",
+      "label": "ECE/Core Resume",
+      "name": "SURYAKSHAR_KONHADA_RESUME_C.pdf",
+      "url": "/SURYAKSHAR_KONHADA_RESUME_C.pdf",
+      "extension": "pdf",
+      "bestFor": "Electronics, telecom, embedded systems, wireless communication, and signal processing roles.",
+      "accent": "from-plasma to-violet-pulse"
+    }
+  ]
+}

@@ -58,22 +58,23 @@ tailwind.config.js
 
 ## Resumes
 
-The portfolio uses embedded resume assets from `public/`.
+The portfolio automatically scans resume files from `public/` and `public/resumes/` during `npm run dev` and `npm run build`.
 
-Use these exact filenames for deployment:
+Recommended filename patterns:
 
 ```text
-public/Suryakshar_Konchada_AI_ML_Resume.pdf
-public/Suryakshar_Konchada_ECE_Core_Resume.pdf
+public/SURYAKSHAR_KONCHADA_RESUME_A.pdf
+public/SURYAKSHAR_KONCHADA_RESUME_C.pdf
 ```
 
-To replace them later, overwrite those files in `public/`. If you use different filenames, update:
+You can use different names, but include clear keywords so the site labels them correctly:
 
-```js
-profile.resumes
+```text
+AI resume: include AI, ML, or RESUME_A in the filename
+Core resume: include CORE, ECE, COMMUNICATION, TELECOM, or RESUME_C in the filename
 ```
 
-inside `src/data/portfolio.js`.
+Only PDF and DOCX files are supported. If more than two resume files exist, the build picks the best AI/Core pair it can infer from filenames.
 
 ## Deployment
 
