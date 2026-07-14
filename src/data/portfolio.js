@@ -344,6 +344,30 @@ export const featuredProjects = [
     pipeline: ["Admin creates notice", "Backend stores content", "Students view updates", "Documents and timetable data stay organized"],
     outcome: "A structured academic communication tool with a cleaner student-facing workflow.",
     decisions: ["Kept the interface direct and admin-friendly", "Structured the project so it can grow beyond static notices"]
+  },
+  {
+    title: "Spoorthi Chatbot",
+    github: "https://github.com/suryakshar1205/spoorthi_ai",
+    demo: "https://spoorthi-ai.vercel.app",
+    icon: BrainCircuit,
+    type: "AI Festival Assistant",
+    description:
+      "Domain-specific RAG chatbot for Spoorthi 2026 fest with grounded Q&A, semantic retrieval via FAISS, and admin knowledge console.",
+    stack: ["React", "Next.js", "FastAPI", "FAISS", "RAG"],
+    visual: "agent",
+    image: "/images/spoorthi.png",
+    problem: "Festival attendees face fragmented event updates, leading to delays and confusion about scheduling and venues.",
+    pipeline: [
+      "User submits event query via Next.js interface",
+      "FastAPI endpoint processes tokenization & routing",
+      "FAISS matches query semantic embedding to grounds",
+      "Context-anchored response returned in real-time"
+    ],
+    outcome: "An active, conversational event assistant providing immediate answers and ground-truth event coordination.",
+    decisions: [
+      "Utilized Next.js 15 for server-side layout caching & fast mobile rendering",
+      "Imposed JWT security on database write-endpoints to protect event metadata updates"
+    ]
   }
 ];
 

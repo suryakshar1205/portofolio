@@ -193,6 +193,7 @@ function ProjectArchitectureModal({ project, onClose }) {
                     alt={`${project.title} Blueprint`} 
                     className="w-full h-auto rounded-2xl border border-white/5"
                   />
+                  <p className="text-sm leading-7 text-slate-300 mt-4 border-t border-white/5 pt-3 px-1">{project.description}</p>
                 </div>
               )}
               <div className="grid gap-4 sm:grid-cols-2">
