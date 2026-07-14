@@ -1,4 +1,4 @@
-﻿import {
+import {
   Award,
   BrainCircuit,
   Car,
@@ -17,7 +17,10 @@
   Satellite,
   Sparkles,
   TerminalSquare,
-  Waves
+  Waves,
+  Activity,
+  ShieldAlert,
+  Compass
 } from "lucide-react";
 
 export const profile = {
@@ -253,18 +256,46 @@ export const currentlyExploring = [
 
 export const featuredProjects = [
   {
-    title: "Digital Notice Board",
-    github: "https://github.com/suryakshar1205/Digital-Notice-Board",
-    icon: Rocket,
-    type: "Academic Utility System",
+    title: "ReplyIQ",
+    github: "https://github.com/suryakshar1205/repliq",
+    icon: MessageSquareText,
+    type: "AI Support Agent & QA",
     description:
-      "An academic notice platform with admin workflows, schedules, document previews, and student-facing utilities.",
-    stack: ["Flask", "SQLAlchemy", "JavaScript", "HTML/CSS"],
-    visual: "notice",
-    problem: "Academic updates often get scattered across different channels, making it harder for students to find timely notices and schedules.",
-    pipeline: ["Admin creates notice", "Backend stores content", "Students view updates", "Documents and timetable data stay organized"],
-    outcome: "A structured academic communication tool with a cleaner student-facing workflow.",
-    decisions: ["Kept the interface direct and admin-friendly", "Structured the project so it can grow beyond static notices"]
+      "An agentic customer support engine combining semantic vector retrieval, multi-dimensional response auditing, and recursive self-correction.",
+    stack: ["Python", "Streamlit", "FAISS", "Sentence Transformers", "Gemini API"],
+    visual: "agent",
+    problem: "Generative support agents often draft responses that sound plausible but violate company policies, hallucinate, or use an incorrect tone.",
+    pipeline: ["Incoming user query", "FAISS semantic context query", "Response draft generation", "LLM-as-a-Judge 8-dimensional audit", "Self-correcting refinement loop"],
+    outcome: "An automated response system that maintains high support quality, recursively refining drafts until they score 9.0/10 or higher.",
+    decisions: ["Established a weighted 8-dimension scoring rubric for local audit evaluations", "Implemented a closed agent correction loop to guarantee policy alignment"]
+  },
+  {
+    title: "Crescendo Jailbreak Defense",
+    github: "https://github.com/suryakshar1205/crescendo_jail_break",
+    icon: ShieldAlert,
+    type: "LLM Security / Safety",
+    description:
+      "A layered, inference-time safety defense pipeline countering multi-turn Crescendo-style jailbreak attacks on Llama-3.2-3B-Instruct.",
+    stack: ["Python", "Transformers", "LLM Security", "Pytest"],
+    visual: "jailbreak",
+    problem: "Multi-turn jailbreak attacks gradually drift the conversation context, bypassing static system prompts and keyword filters through incremental manipulation.",
+    pipeline: ["Prompt input", "Semantic drift analysis via MiniLM", "Behavioral rule check", "Historical risk fusion with decay (λ=0.80)", "Adaptive mitigation/refusal"],
+    outcome: "A robust safety wrapper achieving 0.0% Attack Success Rate (ASR) on seen/unseen attack datasets without model fine-tuning.",
+    decisions: ["Paired embedding-based similarity drift with risk decay to account for conversation trajectory", "Designed modular test suites in Pytest for quick validation without loading full weights"]
+  },
+  {
+    title: "Hidden Opportunity Finder",
+    github: "https://github.com/suryakshar1205/hidden_opp_finder",
+    icon: Compass,
+    type: "Multi-Agent Systems",
+    description:
+      "An intelligent career advisor agent that scans candidate profiles to discover obscure, unlisted career roles and recommends targeted learning roadmaps.",
+    stack: ["Python", "ADK 2.0", "FastMCP", "Gemini API", "Multi-Agent Systems"],
+    visual: "ai",
+    problem: "Obscure internships, fellowships, and open-source roles are hidden across disjointed sites, making discovery manual and tedious.",
+    pipeline: ["Resume scanning & sanitization", "PII/injection security vetting", "Multi-agent delegation (Scout & Mentor)", "Interactive human consent check", "Vetted report generation"],
+    outcome: "An orchestrator-led advisor that finds hidden roles, maps skill gaps, and resumes execution seamlessly after human cover-letter approval.",
+    decisions: ["Utilized Google Agent Development Kit (ADK 2.0) delegation models for clean sub-agent coordination", "Implemented rerun-on-resume nodes to preserve agent state during user pauses"]
   },
   {
     title: "Plant Disease Detection",
@@ -281,35 +312,6 @@ export const featuredProjects = [
     decisions: ["Focused on preprocessing quality", "Used CNN-based classification for visual pattern recognition"]
   },
   {
-    title: "Twitter Sentiment Analysis",
-    github: "https://github.com/suryakshar1205/Twitter-Sentiment-Analysis",
-    icon: MessageSquareText,
-    type: "NLP System",
-    description:
-      "An NLP pipeline for tweet sentiment classification using preprocessing, TF-IDF vectorization, and ML models.",
-    stack: ["NLP", "TF-IDF", "Scikit-learn", "Python"],
-    visual: "nlp",
-    problem: "Social text is noisy, short, and inconsistent, so the system needs careful preprocessing before classification.",
-    pipeline: ["Raw tweet text", "Tokenization and cleanup", "TF-IDF vectorization", "Sentiment classifier"],
-    outcome: "A reusable NLP pipeline for converting text into sentiment predictions.",
-    decisions: ["Used classic ML for interpretability", "Prioritized preprocessing because text quality drives model quality"]
-  },
-  {
-    title: "Spoorthi AI",
-    github: "https://github.com/suryakshar1205/spoorthi_ai",
-    demo: "https://spoorthi-ai.vercel.app",
-    icon: Sparkles,
-    type: "AI Prototype",
-    description:
-      "A hosted AI prototype for intelligent interactions and event/support workflows.",
-    stack: ["Python", "AI", "Automation", "Prototype"],
-    visual: "ai",
-    problem: "Event and user-support workflows benefit from quick, intelligent interactions instead of static information pages.",
-    pipeline: ["User query", "AI interaction layer", "Response workflow", "Live web experience"],
-    outcome: "A hosted AI prototype available as a real live site.",
-    decisions: ["Shipped a live Vercel deployment", "Kept the prototype focused on practical interaction flow"]
-  },
-  {
     title: "High Beam Assist",
     github: "https://github.com/suryakshar1205/High-Beam-Assist",
     icon: Car,
@@ -322,10 +324,53 @@ export const featuredProjects = [
     pipeline: ["Ambient light sensing", "Signal thresholding", "ESP32 decision logic", "Relay-controlled beam switch"],
     outcome: "An embedded ECE safety system that connects sensor input with real-time control.",
     decisions: ["Used simple sensor logic for predictable behavior", "Focused on fast physical response instead of overcomplicated AI"]
+  },
+  {
+    title: "Digital Notice Board",
+    github: "https://github.com/suryakshar1205/Digital-Notice-Board",
+    icon: Rocket,
+    type: "Academic Utility System",
+    description:
+      "An academic notice platform with admin workflows, schedules, document previews, and student-facing utilities.",
+    stack: ["Flask", "SQLAlchemy", "JavaScript", "HTML/CSS"],
+    visual: "notice",
+    problem: "Academic updates often get scattered across different channels, making it harder for students to find timely notices and schedules.",
+    pipeline: ["Admin creates notice", "Backend stores content", "Students view updates", "Documents and timetable data stay organized"],
+    outcome: "A structured academic communication tool with a cleaner student-facing workflow.",
+    decisions: ["Kept the interface direct and admin-friendly", "Structured the project so it can grow beyond static notices"]
   }
 ];
 
+
 export const projects = [
+  {
+    title: "Hidden Opportunity Finder",
+    github: "https://github.com/suryakshar1205/hidden_opp_finder",
+    description:
+      "An orchestrator-led career advisor using Google ADK 2.0 to find unlisted roles and generate skill-gap roadmaps.",
+    stack: ["Python", "ADK 2.0", "FastMCP", "Gemini API", "Agentic Systems"]
+  },
+  {
+    title: "ReplyIQ",
+    github: "https://github.com/suryakshar1205/repliq",
+    description:
+      "Agentic support assistant checking response quality with an 8-dimensional LLM-as-a-Judge and self-correcting refinement loops.",
+    stack: ["Python", "Streamlit", "FAISS", "Sentence Transformers", "Gemini API"]
+  },
+  {
+    title: "Smart Water Management",
+    github: "https://github.com/suryakshar1205/smart-water-infrastructure-management",
+    description:
+      "Verilog-based distribution system simulator with FSM automated pump schedules, zones, and leakage protection.",
+    stack: ["Verilog HDL", "FSM", "ModelSim", "Systems Engineering"]
+  },
+  {
+    title: "Crescendo Jailbreak Defense",
+    github: "https://github.com/suryakshar1205/crescendo_jail_break",
+    description:
+      "Inference-time safety wrapper preventing multi-turn Crescendo jailbreak attacks using semantic drift detection and risk score memory decay.",
+    stack: ["Python", "Pytest", "Transformers", "LLM Security"]
+  },
   {
     title: "Digital Notice Board",
     github: "https://github.com/suryakshar1205/Digital-Notice-Board",

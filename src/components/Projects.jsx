@@ -253,7 +253,10 @@ function ProjectVisual({ variant }) {
     vision: ["leaf scan", "cnn", "diagnosis"],
     nlp: ["tokenize", "vectorize", "classify"],
     ai: ["prompt", "reason", "ship"],
-    embedded: ["sense", "decide", "switch"]
+    embedded: ["sense", "decide", "switch"],
+    observability: ["signals", "model", "insights"],
+    agent: ["retrieve", "evaluate", "refine"],
+    jailbreak: ["crescendo", "override", "bypass"]
   };
 
   return (
