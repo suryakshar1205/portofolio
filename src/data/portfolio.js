@@ -65,7 +65,7 @@ export const profile = {
     "I am an AI/ML-focused Electronics and Communication Engineering student at JNTUH. I build across NLP, computer vision, communication systems, and AI + ECE applications, with a focus on practical engineering outcomes.",
   stats: [
     { value: "Multiple", label: "Engineering Projects" },
-    { value: "8.13", label: "Academic CGPA" },
+    { value: "8.25", label: "Academic CGPA" },
     { value: "Cross-domain", label: "AI + ECE Focus" },
     { value: "2027", label: "Integrated B.Tech + M.Tech" }
   ]
@@ -264,6 +264,7 @@ export const featuredProjects = [
       "An agentic customer support engine combining semantic vector retrieval, multi-dimensional response auditing, and recursive self-correction.",
     stack: ["Python", "Streamlit", "FAISS", "Sentence Transformers", "Gemini API"],
     visual: "agent",
+    image: "/images/replyiq.png",
     problem: "Generative support agents often draft responses that sound plausible but violate company policies, hallucinate, or use an incorrect tone.",
     pipeline: ["Incoming user query", "FAISS semantic context query", "Response draft generation", "LLM-as-a-Judge 8-dimensional audit", "Self-correcting refinement loop"],
     outcome: "An automated response system that maintains high support quality, recursively refining drafts until they score 9.0/10 or higher.",
@@ -278,6 +279,7 @@ export const featuredProjects = [
       "A layered, inference-time safety defense pipeline countering multi-turn Crescendo-style jailbreak attacks on Llama-3.2-3B-Instruct.",
     stack: ["Python", "Transformers", "LLM Security", "Pytest"],
     visual: "jailbreak",
+    image: "/images/crescendo.png",
     problem: "Multi-turn jailbreak attacks gradually drift the conversation context, bypassing static system prompts and keyword filters through incremental manipulation.",
     pipeline: ["Prompt input", "Semantic drift analysis via MiniLM", "Behavioral rule check", "Historical risk fusion with decay (λ=0.80)", "Adaptive mitigation/refusal"],
     outcome: "A robust safety wrapper achieving 0.0% Attack Success Rate (ASR) on seen/unseen attack datasets without model fine-tuning.",
@@ -292,6 +294,7 @@ export const featuredProjects = [
       "An intelligent career advisor agent that scans candidate profiles to discover obscure, unlisted career roles and recommends targeted learning roadmaps.",
     stack: ["Python", "ADK 2.0", "FastMCP", "Gemini API", "Multi-Agent Systems"],
     visual: "ai",
+    image: "/images/opportunity_finder.png",
     problem: "Obscure internships, fellowships, and open-source roles are hidden across disjointed sites, making discovery manual and tedious.",
     pipeline: ["Resume scanning & sanitization", "PII/injection security vetting", "Multi-agent delegation (Scout & Mentor)", "Interactive human consent check", "Vetted report generation"],
     outcome: "An orchestrator-led advisor that finds hidden roles, maps skill gaps, and resumes execution seamlessly after human cover-letter approval.",
@@ -306,6 +309,7 @@ export const featuredProjects = [
       "A computer vision workflow for detecting plant disease patterns from leaf imagery using preprocessing and CNN classification.",
     stack: ["Python", "CNN", "Computer Vision", "Image Processing"],
     visual: "vision",
+    image: "/images/plant_disease.png",
     problem: "Plant disease detection needs fast visual analysis so crop issues can be identified earlier.",
     pipeline: ["Leaf image input", "Image preprocessing", "CNN feature learning", "Disease class prediction"],
     outcome: "A computer vision pipeline that demonstrates diagnosis-style classification from image data.",
@@ -320,6 +324,7 @@ export const featuredProjects = [
       "An ESP32-based night-driving assist system for automatic high/low beam switching.",
     stack: ["ESP32", "C++", "LDR Sensors", "Relay Control", "Embedded Systems"],
     visual: "embedded",
+    image: "/images/high_beam.png",
     problem: "Manual high-beam switching can reduce safety during night driving when lighting conditions change quickly.",
     pipeline: ["Ambient light sensing", "Signal thresholding", "ESP32 decision logic", "Relay-controlled beam switch"],
     outcome: "An embedded ECE safety system that connects sensor input with real-time control.",
@@ -334,6 +339,7 @@ export const featuredProjects = [
       "An academic notice platform with admin workflows, schedules, document previews, and student-facing utilities.",
     stack: ["Flask", "SQLAlchemy", "JavaScript", "HTML/CSS"],
     visual: "notice",
+    image: "/images/notice_board.png",
     problem: "Academic updates often get scattered across different channels, making it harder for students to find timely notices and schedules.",
     pipeline: ["Admin creates notice", "Backend stores content", "Students view updates", "Documents and timetable data stay organized"],
     outcome: "A structured academic communication tool with a cleaner student-facing workflow.",
@@ -446,15 +452,16 @@ export const projects = [
 
 export const experience = [
   {
-    role: "Telecommunication + AI-ECE Intern",
-    company: "BSNL",
-    date: "Recent Internship",
-    icon: Satellite,
+    role: "AI/ML Intern",
+    company: "Edunet Foundation",
+    date: "Dec 2024 - Jan 2025",
+    icon: Cpu,
     points: [
-      "Explored telecom infrastructure and AI opportunities in communication-system workflows.",
-      "Connected ECE foundations with signals, routing, reliability, and intelligent automation ideas."
+      "Completed a comprehensive AI internship framework recognized by AICTE, successfully fulfilling credentials across the IBM SkillsBuild and TechSaksham (Microsoft & SAP CSR) tracks.",
+      "Engaged in a 6-week intensive training program centered on practical machine learning applications and data engineering paradigms.",
+      "Gained foundational exposure to enterprise-level cloud platforms and cognitive toolkits backed by global technology leaders."
     ],
-    stack: ["Telecom", "AI + ECE", "Communication Networks", "Systems Engineering"]
+    stack: ["Python", "Artificial Intelligence", "Machine Learning", "Cloud Platforms", "Enterprise Tech"]
   },
   {
     role: "AI/ML Intern",
@@ -462,11 +469,11 @@ export const experience = [
     date: "April 2024 - May 2024",
     icon: BrainCircuit,
     points: [
-      "Built text and image classification models using Python and deep learning frameworks.",
-      "Improved NLP classification accuracy from 75% to 90% through feature engineering.",
-      "Implemented a Vision Transformer for CIFAR-10 image classification."
+      "Engineered AI/ML pipelines for NLP and computer vision tasks, processing 50,000+ text samples and 60,000 images for classification workflows.",
+      "Constructed an NLP text classification pipeline using TF-IDF, feature engineering, and hyperparameter tuning, improving model accuracy from 75% to 90%.",
+      "Implemented a Vision Transformer (ViT) for CIFAR-10 classification across 10 classes, leveraging data augmentation, patch encoding, and AdamW optimization to improve model generalization."
     ],
-    stack: ["Python", "Machine Learning", "NLP", "Vision Transformers", "Computer Vision"]
+    stack: ["Python", "TensorFlow", "NumPy", "Matplotlib", "NLP", "Vision Transformers", "Computer Vision", "Feature Engineering", "Hyperparameter Tuning"]
   },
   {
     role: "Hackathon & Campus Builder",
