@@ -180,13 +180,12 @@ function ProjectArchitectureModal({ project, onClose }) {
             </button>
           </div>
 
-          <div className="grid gap-6 p-5 lg:grid-cols-[1fr_.9fr]">
+          <div className="grid gap-6 p-5 lg:grid-cols-[1.1fr_.9fr]">
             <div className="space-y-5">
-              <ProjectArchitectureDiagram projectTitle={project.title} />
               {project.image && (
-                <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950/60 p-3">
+                <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950/60 p-3 shadow-inner">
                   <div className="text-[10px] uppercase tracking-[0.2em] text-cyan-beam/70 font-mono mb-2 px-1 flex justify-between items-center">
-                    <span>Isometric System Blueprint</span>
+                    <span>System Architecture Blueprint</span>
                     <span className="text-[9px] bg-cyan-beam/10 border border-cyan-beam/20 px-2 py-0.5 rounded-full text-cyan-beam">3D Render</span>
                   </div>
                   <img 
@@ -200,6 +199,9 @@ function ProjectArchitectureModal({ project, onClose }) {
                 <ModalPanel title="Problem" text={project.problem} />
                 <ModalPanel title="Result / Value" text={project.outcome} />
               </div>
+            </div>
+
+            <div className="space-y-5">
               <div className="rounded-3xl border border-white/10 bg-white/[0.035] p-5">
                 <p className="font-display text-xs uppercase tracking-[0.22em] text-cyan-beam">Technical Decisions</p>
                 <div className="mt-4 space-y-3">
@@ -210,24 +212,7 @@ function ProjectArchitectureModal({ project, onClose }) {
                   ))}
                 </div>
               </div>
-            </div>
 
-            <div className="space-y-5">
-              <div className="rounded-3xl border border-cyan-beam/20 bg-cyan-beam/[0.045] p-5">
-                <p className="font-display text-xs uppercase tracking-[0.22em] text-cyan-beam">Architecture Flow</p>
-                <div className="mt-5 space-y-3">
-                  {project.pipeline.map((step, index) => (
-                    <div key={step} className="flex items-center gap-3">
-                      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-cyan-beam/30 bg-cyan-beam/10 font-display text-sm text-cyan-beam">
-                        {index + 1}
-                      </span>
-                      <span className="flex-1 rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-sm text-slate-300">
-                        {step}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
               <div className="rounded-3xl border border-white/10 bg-white/[0.035] p-5">
                 <p className="font-display text-xs uppercase tracking-[0.22em] text-cyan-beam">Stack</p>
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -238,12 +223,13 @@ function ProjectArchitectureModal({ project, onClose }) {
                   ))}
                 </div>
               </div>
+
               <div className="flex flex-wrap gap-3">
-                <a className="mini-button" href={project.github} target="_blank" rel="noreferrer">
+                <a className="mini-button flex-1 justify-center" href={project.github} target="_blank" rel="noreferrer">
                   GitHub <ArrowUpRight size={16} />
                 </a>
                 {project.demo && (
-                  <a className="mini-button" href={project.demo} target="_blank" rel="noreferrer">
+                  <a className="mini-button flex-1 justify-center" href={project.demo} target="_blank" rel="noreferrer">
                     Live Site <ArrowUpRight size={16} />
                   </a>
                 )}
